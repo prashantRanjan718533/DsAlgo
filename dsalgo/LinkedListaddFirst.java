@@ -1,6 +1,7 @@
 package dsalgo;
 
-public class LinkedLists {
+public class LinkedListaddFirst {
+    
 
     static class Node {
         int data;
@@ -28,23 +29,23 @@ public class LinkedLists {
                 System.out.println(curNode.data);
                 curNode = curNode.next;
             }
-            
-            // throw new UnsupportedOperationException("Unimplemented method 'print'");
         }
     
     
     public static void main(String[] args) {
         System.out.println("working");
-        LinkedLists list = new LinkedLists();
+        LinkedListaddFirst list = new LinkedListaddFirst();
         list.addFirst(10);
                 list.addFirst(20);
                 list.addFirst(30);
+                list.addFirst(130);
                 list.print(); // Test the print method
+                
                             }
-                
-                
-                
-                    
-        
+
            
 }
+
+
+    
+
