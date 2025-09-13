@@ -16,6 +16,7 @@ public class LinkedListaadLast {
         last.addLast(2202);
         last.addLast(20002);
         last.addLast(11);
+        last.addLast(23);
         last.printlst();
 
     }
