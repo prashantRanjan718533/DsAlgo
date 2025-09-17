@@ -10,39 +10,30 @@ public class LinkedLists {
             this.next = null;
         }
     }
-        Node head;
-        public void addFirst(int data){
-            Node newNode = new Node(data);
-            if( head == null){
-                head = newNode;
-                return;
-            }
-          newNode.next = head;
-          head = newNode;
-
+    Node newNode = new Node(data);
+    public void addFirst( int data){
+        //check if head is null
+        if( head == null){
+            head = newNode;
+            return;
         }
-        private void print() {
-            // TODO Auto-generated method stub
-            Node curNode = head;
-            while (curNode!= null) {
-                System.out.println(curNode.data);
-                curNode = curNode.next;
-            }
-            
-            // throw new UnsupportedOperationException("Unimplemented method 'print'");
+        head= newNode.data;
+        newNode.next=null;
+    }
+     public void print(){
+        while (head != null) {
+            System.out.println(newNode);
+            head = newNode.next;
         }
-    
+     }
     
     public static void main(String[] args) {
         System.out.println("working");
         LinkedLists list = new LinkedLists();
         list.addFirst(10);
-                list.addFirst(20);
-                list.addFirst(30);
-                list.print(); // Test the print method
-                            }
-                
-                
+       
+    }
+}
                 
                     
         
