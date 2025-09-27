@@ -1,7 +1,5 @@
 package dsalgo.queue;
 
-import java.util.Queue;
-
 public class QueueWIthLinkedList {
     Node front = null, rear = null;
 
