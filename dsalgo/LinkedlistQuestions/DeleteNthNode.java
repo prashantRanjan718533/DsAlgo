@@ -1,4 +1,4 @@
-package LinkedlistQuestions;
+package dsalgo.LinkedlistQuestions;
 
 public class DeleteNthNode {
     // Definition for a singly-linked list node.

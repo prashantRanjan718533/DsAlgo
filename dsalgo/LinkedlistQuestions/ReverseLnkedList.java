@@ -1,4 +1,4 @@
-package LinkedlistQuestions;
+package dsalgo.LinkedlistQuestions;
 
 
 public class ReverseLnkedList {
@@ -22,14 +22,15 @@ public class ReverseLnkedList {
     }
     public static void  printList(RevNode head){
         if(head == null){
-            System.out.println("list is empty");
+            System.out.print("list is empty");
         }
+        System.out.println();
        RevNode curr = head;
             while(curr!=null){
-                System.out.println(curr.data);
+                System.out.print(curr.data+" -> ");
                 curr= curr.next;
             }
-            System.out.println("-> null");
+//            System.out.print("-> null");
                 // return curr;
 
     }
@@ -49,11 +50,7 @@ public class ReverseLnkedList {
 
        head = reverselist(head);
        ReverseLnkedList.printList(head);
-              
-       
-           
-              
-             
+
     }
        
            private static RevNode reverselist(RevNode head) {
@@ -66,7 +63,7 @@ public class ReverseLnkedList {
                 curr.next = prev;
                 prev = curr;
                 curr = nextnode;
-                
+//                System.out.println(prev.data+" -> ");
             }
             return prev;
             
