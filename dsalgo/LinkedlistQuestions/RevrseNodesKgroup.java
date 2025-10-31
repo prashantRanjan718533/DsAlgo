@@ -17,7 +17,6 @@ public class RevrseNodesKgroup {
     }
 
     public static void main(String[] args) {
-        RevrseNodesKgroup reverseBetween = new RevrseNodesKgroup();
         Nodesss head = new RevrseNodesKgroup.Nodesss(11);
         head.next = new RevrseNodesKgroup.Nodesss(22);
         head.next.next = new RevrseNodesKgroup.Nodesss(3);
