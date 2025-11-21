@@ -8,9 +8,7 @@ public class UnqueSumcount {
         int target =  47;
         int count=0;
         while (low<high){
-//            if( arr[low]>1 && arr [low]==arr[low-1]){
-//                continue;
-//            }
+
             int sum = arr[low]+arr[high];
             if(sum== target){
                 count++;
